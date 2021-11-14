@@ -1,0 +1,80 @@
+@import 'colors';
+@import 'media-queries';
+
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar{
+    @extend %align-center;
+    background: $lightgray;
+    height: 13vh;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0.5rem calc((100vw - 1200px) /2);
+    border-bottom: solid 1px $strongred;
+    position: relative;
+
+    &__logo{
+        font-size: 1.5rem;
+        color: $black;
+    }
+
+    &__bars{
+        font-size: 2rem;
+        padding: 10px;
+        opacity: 0;
+        border-radius: .12rem;
+        position: absolute;
+        right: 10%;
+        margin-right: 30px;
+
+        &:hover,
+        :active{
+            color: $strongred;
+            cursor: pointer;
+            background: rgba(52,58,64,.5);
+            transition: 0.5s ease;
+        }
+
+        @include tablet {
+            opacity: 1;
+        }
+    }
+
+    &__menu{
+
+        &--links{
+            text-decoration: none;
+            padding: 0.5rem;
+            color: $black;
+
+            &:hover{
+                color: $strongred;
+                cursor: pointer;
+                font-weight: 550;
+                background: rgba(52,58,64,.5);
+                transition: 0.3s ease-in-out;
+            }
+
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
+    &__slidebar{
+        font-size: 1.25rem;
+        color: $black;
+        padding-right: 50px;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+    }
+    
+
+
+}

@@ -1,0 +1,70 @@
+@import 'colors';
+
+
+.container{
+    background-color: $strongblue;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    height: 100%;
+
+    &__quote{
+        vertical-align: middle;
+        background-color: white;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    &__home{
+        height: 100%;
+        width: 75%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap:50px;
+
+        padding-bottom: 3rem;
+
+
+        &--welcome{
+            text-align: left;
+            font-size: 110%;
+
+            &--span{
+                font-size: 140%;
+                color: $strongred;
+            }
+        }
+
+        &--description{
+            
+            text-align: justify;
+            padding-top: 2rem;
+        }
+
+        &--sp{
+            text-transform: uppercase;
+            display: block;
+            margin: 1rem 0;
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        &--list ul{
+            list-style: none;
+            text-transform: uppercase;
+        }
+
+        &--findme{
+            
+        }
+    }
+
+
+
+}
+
+

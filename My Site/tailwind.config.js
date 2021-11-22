@@ -9,6 +9,8 @@ module.exports = {
         "cs-blue" : "#242A45",
         "cs-grey" : "#9194A2",
         "cs-white" : "#f7f7f7",
+        "cs-cream" : "#EFFFFA",
+        "cs-pink" : "#FF3864",
       },
     },
     screens : {

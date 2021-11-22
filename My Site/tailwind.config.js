@@ -4,13 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "cs-purple" : "#5267D7",
-        "cs-red" : "#FA5959",
-        "cs-blue" : "#2176FF",
-        "cs-grey" : "#9194A2",
-        "cs-white" : "#f7f7f7",
-        "cs-cream" : "#ADA8B6",
+        "cs-purple" : "#845EC2",
+        "cs-light-purple" : "#B39CD0",
+        "cs-light-pink" : "#FBEAFF",
+        "cs-cyan" : "#00C9A7",
         "cs-pink" : "#FF3864",
+        "cs-blue" : "#2C73D2",
+        "cs-grey" : "#B0A8B9",
+        "cs-black" : "#4B4453",
       },
     },
     screens : {

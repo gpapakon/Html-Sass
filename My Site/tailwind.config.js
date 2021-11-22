@@ -6,10 +6,10 @@ module.exports = {
       colors: {
         "cs-purple" : "#5267D7",
         "cs-red" : "#FA5959",
-        "cs-blue" : "#242A45",
+        "cs-blue" : "#2176FF",
         "cs-grey" : "#9194A2",
         "cs-white" : "#f7f7f7",
-        "cs-cream" : "#EFFFFA",
+        "cs-cream" : "#ADA8B6",
         "cs-pink" : "#FF3864",
       },
     },

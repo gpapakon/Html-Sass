@@ -9,9 +9,9 @@
     <link rel="icon"  href="../images/meteor-solid.svg">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="font-mono subpixel-antialiased antialiased ">
+<body class="font-mono w-full ">
     <!-- Header -->
-    <header class="border-b-2 border-blue-600 ">
+    <header class="border-b-2 border-blue-600 m-auto">
         <nav class=" container  py-6 items-center flex mr-auto ml-auto">
             <div class="">
                 <h1 class="text-xl cursor-default mr-16">George Papakonstantinou</h1>
@@ -45,7 +45,7 @@
             </div>
     
             <!-- You can find me -->
-            <div class="py-4 text-center grid grid-cols-2 gap-3 justify-items-center">
+            <div class="py-4 text-center grid grid-cols-1 sm:grid-cols-2 gap-3 justify-items-center">
                 <div class="bg-blue-600 rounded-md px-10">
                     <h2 class="text-2xl font-semibold">You can find me:</h2>
                     <div class="grid grid-cols-2 justify-items-center gap-x-12 w-1/2 m-auto text-3xl p-3 cursor-pointer gap-4 align-bottom">
@@ -80,31 +80,34 @@
             </div>
     
             <!-- Card -->
-            <div class="bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
-                <i class="fas fa-user-check  text-5xl my-4 mx-4"></i>
-                <h1 class="text-2xl mb-2">Self Attributes</h1>
-                <p class=" ">Constant hunger for knowledge and food,problem solver and highly organized.  </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-4">
+                <div class="w-full h-56 bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
+                    <i class="fas fa-user-check  text-5xl my-4 mx-4"></i>
+                    <h1 class="text-2xl mb-2">Self Attributes</h1>
+                    <p class=" ">Constant hunger for knowledge and food,problem solver and highly organized.  </p>
+                </div>
+                <div class="w-full h-56 bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
+                    <i class="fas  fa-globe-europe text-5xl my-4 mx-4"></i>
+                    <h1 class="text-2xl mb-2">Origin</h1>
+                    <p>I was born in '99 and raised in the city of Thessaloniki,Greece. </p>
+                </div>
+                <div class="w-full h-56 bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
+                    <i class="fas  fa-language text-5xl my-4 mx-4"></i>
+                    <h1 class="text-2xl mb-2">Languages</h1>
+                    <p>My mother tongue is Greek but I can also speak English.  </p>
+                </div>
+                <div class="w-full h-56 bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
+                    <i class="fas fa-code text-5xl my-4 mx-4"></i>
+                    <h1 class="text-2xl mb-2">Dev Dream</h1>
+                    <p>Starting of as a Front-End Developer,moving to Full-Stack and later on to DevOps. </p>
+                </div>
+                <div class="w-full h-56 bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
+                    <i class="fas fa-heartbeat text-5xl my-4 mx-4"></i>
+                    <h1 class="text-2xl mb-2">Hobbies</h1>
+                    <p>Hitchhinking,Music,Playing Games,Photoshop and Ping Pong. </p>
+                </div>
             </div>
-            <div class="bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
-                <i class="fas  fa-globe-europe text-5xl my-4 mx-4"></i>
-                <h1 class="text-2xl mb-2">Origin</h1>
-                <p>I was born in '99 and raised in the city of Thessaloniki,Greece. </p>
-            </div>
-            <div class="bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
-                <i class="fas  fa-language text-5xl my-4 mx-4"></i>
-                <h1 class="text-2xl mb-2">Languages</h1>
-                <p>My mother tongue is Greek but I can also speak English.  </p>
-            </div>
-            <div class="bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
-                <i class="fas fa-code text-5xl my-4 mx-4"></i>
-                <h1 class="text-2xl mb-2">Dev Dream</h1>
-                <p>Starting of as a Front-End Developer,moving to Full-Stack and later on to DevOps. </p>
-            </div>
-            <div class="bg-blue-600 text-white rounded-md px-4 pb-4 pt-3 mb-4 max-w-3xl m-auto hover:text-blue-600 hover:bg-white transition"> 
-                <i class="fas fa-heartbeat text-5xl my-4 mx-4"></i>
-                <h1 class="text-2xl mb-2">Hobbies</h1>
-                <p>Hitchhinking,Music,Playing Games,Photoshop and Ping Pong. </p>
-            </div>
+            
         </div>
     </section>
 
@@ -119,7 +122,7 @@
                 <p>I've worked with a range of technologies during my academic studies in the software engineering world.</p>
             </div>
     
-            <div class="grid grid-cols-3 justify-items-center pt-3 gap-3">
+            <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center pt-3 gap-3">
     
                 <div class="bg-blue-600 rounded-md p-3 w-80">
                     <h1 class="text-2xl font-extrabold">Front-End</h1>
@@ -177,36 +180,39 @@
                 <h1>Portfolio</h1>
             </div>
             <!-- Card -->
-            <div class="bg-blue-600 w-80 text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
-                <a href="https://github.com/gpapakon/Java-X-Pythia-" target="_blank">
-                    <img class="rounded-md" src="../images/java1.jpg" alt="">
-                    <h1 class="text-2xl  my-4 text-center">Pythia v2</h1>
-                    <p class=" ">Using Java, JavaSwing (UI), Local files as a storage space. The App is called Pythia and it is a simple course registration program I created for academic purposes. As an University student you can register into available courses, see your grades and all of your data are written to a txt file.</p>
-                </a>
+            <div class="grid grid-cols-1 gap-y-14 sm:grid-cols-2 sm:gap-y-5 md:gap-y-16">
+                <div class="bg-blue-600 w-80 h-full text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
+                    <a href="https://github.com/gpapakon/Java-X-Pythia-" target="_blank">
+                        <img class="rounded-md" src="../images/java1.jpg" alt="">
+                        <h1 class="text-2xl  my-4 text-center">Pythia v2</h1>
+                        <p class=" ">Using Java, JavaSwing (UI), Local files as a storage space. The App is called Pythia and it is a simple course registration program I created for academic purposes. As an University student you can register into available courses, see your grades and all of your data are written to a txt file.</p>
+                    </a>
+                </div>
+    
+                <div class="bg-blue-600 w-80 h-full text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
+                    <a href="https://github.com/gpapakon/Markers-n-Sensors" target="_blank">
+                        <img class="rounded-md" src="../images/adroid_canary2.jpg" alt="">
+                        <h1 class="text-2xl  my-4 text-center">Markers n' Sensors</h1>
+                        <p class=" ">With the use of Android Canary I build two Google Maps apps. On the first app you can add 5 markers on the map, then add comments and humidity. The second map takes data from our database, in our case takes data from firebase and places the markers.</p>
+                    </a>
+                </div>
+    
+                <div class="bg-blue-600 w-80 h-full text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
+                    <a href="https://github.com/gpapakon/SE-and-Indexing" target="_blank">
+                        <img class="rounded-md" src="../images/terrier3.jpg" alt="">
+                        <h1 class="text-2xl  my-4 text-center">SE and Indexing</h1>
+                        <p class=" ">This is a code repository for a terrier project separated in 2 parts. In the first part we use data set of 50000 documents in order to create 5 different indexes.In the second part we compare those indexes in order to find the best of them based of MAP (Mean Average Precision), Precision and Recall.</p>
+                    </a>
+                </div>
+                <div class="bg-blue-600 w-80 h-full text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
+                    <a href="https://github.com/gpapakon/Monkeys-Sea-Sack" target="_blank">
+                        <img class="rounded-md" src="../images/blender4.jpg" alt="">
+                        <h1 class="text-2xl  my-4 text-center">Monkeys' Sea Sack</h1>
+                        <p class=" ">This is a blender project I created in order go get familiar with 3D animation technologies.Using a wide variety of blender tools I made a 3D sea scene with a house on top of a rock, a well and some other materials. At last, with the use of cycles I rendered the project and created a 3D animation with some interactions.</p>
+                    </a>
+                </div>
             </div>
-
-            <div class="bg-blue-600 w-80 text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
-                <a href="https://github.com/gpapakon/Markers-n-Sensors" target="_blank">
-                    <img class="rounded-md" src="../images/adroid_canary2.jpg" alt="">
-                    <h1 class="text-2xl  my-4 text-center">Markers n' Sensors</h1>
-                    <p class=" ">With the use of Android Canary I build two Google Maps apps. On the first app you can add 5 markers on the map, then add comments and humidity. The second map takes data from our database, in our case takes data from firebase and places the markers.</p>
-                </a>
-            </div>
-
-            <div class="bg-blue-600 w-80 text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
-                <a href="https://github.com/gpapakon/SE-and-Indexing" target="_blank">
-                    <img class="rounded-md" src="../images/terrier3.jpg" alt="">
-                    <h1 class="text-2xl  my-4 text-center">SE and Indexing</h1>
-                    <p class=" ">This is a code repository for a terrier project separated in 2 parts. In the first part we use data set of 50000 documents in order to create 5 different indexes.In the second part we compare those indexes in order to find the best of them based of MAP (Mean Average Precision), Precision and Recall.</p>
-                </a>
-            </div>
-            <div class="bg-blue-600 w-80 text-white rounded-md px-4 pb-5 pt-3 mb-4 m-auto max-w-3xl  hover:text-blue-600 hover:bg-white  transition "> 
-                <a href="https://github.com/gpapakon/Monkeys-Sea-Sack" target="_blank">
-                    <img class="rounded-md" src="../images/blender4.jpg" alt="">
-                    <h1 class="text-2xl  my-4 text-center">Monkeys' Sea Sack</h1>
-                    <p class=" ">This is a blender project I created in order go get familiar with 3D animation technologies.Using a wide variety of blender tools I made a 3D sea scene with a house on top of a rock, a well and some other materials. At last, with the use of cycles I rendered the project and created a 3D animation with some interactions.</p>
-                </a>
-            </div>
+            
 
         </div>
     </section>
@@ -219,15 +225,9 @@
             </div>
             <div class="bg-blue-600 rounded-lg w-1/2 m-auto p-4 mb-3">
                 <form action="" class="grid grid-cols-1 justify-items-center gap-y-2 ">
-                    <div class="">
                         <input type="text" class="rounded-md border border-white" id="" placeholder="Insert your name" required>
-                    </div>
-                    <div class="">
-                        <input type="email" class="rounded-md border border-white w-72 text-center" id="" placeholder="Insert your email" required>
-                    </div>
-                    <div class=" ">
-                        <textarea class="rounded-md w-80 h-80 border border-white inline-block text-center" cols="30" rows="10"  placeholder="Insert your text" required></textarea>
-                    </div>
+                        <input type="email" class="rounded-md border border-white w-72 " id="" placeholder="Insert your email" required>
+                        <textarea class="rounded-md w-80 h-80 border border-white inline-block " cols="30" rows="10"  placeholder="Insert your text" required></textarea>
                     <button  class="hover:bg-blue-600 hover:text-white font-bold  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2 ">Send message</button>
                 </form>
                 

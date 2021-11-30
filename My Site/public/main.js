@@ -1,6 +1,17 @@
-var app = document.getElementById('description');
+var tabBtn = document.getElementById("tabBtn");
+tabBtn.addEventListener("click", btnClick);
 
-console.log(app);
+function btnClick(){
+    
+}
+
+
+
+
+
+
+
+var app = document.getElementById('description');
 
 var typewriter = new Typewriter(app, {
     loop: true,
@@ -18,3 +29,5 @@ typewriter.typeString('Hello World!')
     .pauseFor(2500)
     .deleteAll()
     .start();
+
+    

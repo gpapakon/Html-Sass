@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="font-mono w-full ">
-    <!-- Header -->
-    <header class="border-b-2 border-blue-600 m-auto sticky top-0 bg-white z-50">
+    <!-- Header -->    
+    <header class="border-b-2 border-blue-600 m-auto sticky top-0 bg-white z-50 relative">
         <nav class=" container  py-6 items-center flex mr-auto ml-auto">
             <div class="">
                 <h1 class="text-xl cursor-default mr-16">George Papakonstantinou</h1>
             </div>
-            <div class="flex md:hidden flex-1 justify-end mr-5">
-                <i class="fa fa-bars text-2xl text-blue-600 cursor-pointer"></i>
+            <div class="flex md:hidden flex-1 justify-end mr-5" >
+                <i class="fa fa-bars text-2xl text-blue-600 cursor-pointer" id="tabBtn"></i>
             </div>
-            <div class=" hidden md:flex flex-1 items-center gap-1 text-sm  uppercase justify-end">
+            <div class=" hidden md:flex flex-1 items-center gap-1 text-sm  uppercase justify-end ">
                 <a href="#home" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">HOME</a>
                 <a href="#about" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out ">ABOUT</a>
                 <a href="#technologies" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">Technologies</a>
@@ -30,6 +30,8 @@
         </nav>
 
     </header>
+
+    
     
     <section class=" bg-cs-snow py-3 " id="home">
         <div class="container border-b border-blue-600">

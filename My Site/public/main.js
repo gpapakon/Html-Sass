@@ -1,8 +1,15 @@
-var tabBtn = document.getElementById("tabBtn");
-tabBtn.addEventListener("click", btnClick);
+var btn = document.getElementById("mobile-button");
+var menu = document.getElementById("mobile-menu");
 
-function btnClick(){
-    
+btn.addEventListener("click", () =>{
+    menu.classList.toggle("hidden");
+})
+
+
+for(var i=0; i <menu.childElementCount;i++){
+    menu.children[i].addEventListener("click", () =>{
+        menu.classList.toggle("hidden");
+    })
 }
 
 

@@ -12,20 +12,36 @@
 <body class="font-mono w-full ">
     <!-- Header -->    
     <header class="border-b-2 border-blue-600 m-auto sticky top-0 bg-white z-50 relative">
-        <nav class=" container  py-6 items-center flex mr-auto ml-auto">
-            <div class="">
-                <h1 class="text-xl cursor-default mr-16">George Papakonstantinou</h1>
+        <nav class=" container  py-6  mr-auto ml-auto ">
+            <div class="items-center flexitems-center flex flex-wrap">
+                <div class="flex flex-1">
+                    <h1 class="text-xl cursor-default mr-16">George Papakonstantinou</h1>
+                </div>
+                <!-- Mobile button -->
+                <div class="flex md:hidden flex-1 justify-end " >
+                    <button id="mobile-button" class="">
+                        <i class="fa fa-bars text-2xl  text-blue-600 cursor-pointer px-3 py-1  transition duration-500 ease-in-out border-2  hover:bg-gray-200 rounded-xl " id="tabBtn"></i>
+                    </button>
+                </div>
+                
+                <div class="hidden   md:flex md:flex-1 md:items-center md:gap-1 md:text-sm  md:uppercase md:justify-end ">
+                    <a href="#home" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">HOME</a>
+                    <a href="#about" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out ">ABOUT</a>
+                    <a href="#technologies" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">Technologies</a>
+                    <a href="#education" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out ">EDUCATION</a>
+                    <a href="#portfolio" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">PORTFOLIO</a>
+                    <a href="#contact" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out ">CONTACT</a>
+                </div>
             </div>
-            <div class="flex md:hidden flex-1 justify-end mr-5" >
-                <i class="fa fa-bars text-2xl text-blue-600 cursor-pointer" id="tabBtn"></i>
-            </div>
-            <div class=" hidden md:flex flex-1 items-center gap-1 text-sm  uppercase justify-end ">
-                <a href="#home" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">HOME</a>
-                <a href="#about" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out ">ABOUT</a>
-                <a href="#technologies" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">Technologies</a>
-                <a href="#education" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out ">EDUCATION</a>
-                <a href="#portfolio" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out border-2">PORTFOLIO</a>
-                <a href="#contact" class="hover:bg-blue-600 hover:text-white  rounded-full py-2 px-6 transition duration-500 ease-in-out ">CONTACT</a>
+            
+            <!-- Mobile Menu -->
+            <div class="hidden text-center mt-2 py-2 mt-4 px-5 w-1/2 m-auto  md:hidden border rounded-md border-blue-600" id="mobile-menu">
+                <a class="block bg-gray-200 rounded-md text-blue-600 font-bold text-lg p-1 m-1 hover:text-gray-200 hover:bg-blue-600 transition duration-300 ease-in-out" href="#home">HOME</a>
+                <a class="block bg-gray-200 rounded-md text-blue-600 font-bold text-lg p-1 m-1 hover:text-gray-200 hover:bg-blue-600 transition duration-300 ease-in-out" href="#about">ABOUT</a>
+                <a class="block bg-gray-200 rounded-md text-blue-600 font-bold text-lg p-1 m-1 hover:text-gray-200 hover:bg-blue-600 transition duration-300 ease-in-out" href="#technologies">TECHNOLOGIES</a>
+                <a class="block bg-gray-200 rounded-md text-blue-600 font-bold text-lg p-1 m-1 hover:text-gray-200 hover:bg-blue-600 transition duration-300 ease-in-out" href="#education">EDUCATION</a>
+                <a class="block bg-gray-200 rounded-md text-blue-600 font-bold text-lg p-1 m-1 hover:text-gray-200 hover:bg-blue-600 transition duration-300 ease-in-out" href="#portfolio">PORTFOLIO</a>
+                <a class="block bg-gray-200 rounded-md text-blue-600 font-bold text-lg p-1 m-1 hover:text-gray-200 hover:bg-blue-600 transition duration-300 ease-in-out" href="#contact">CONTACT</a>
             </div>
         </nav>
 
